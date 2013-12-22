@@ -1,7 +1,7 @@
-inherit cmake
+inherit cmake gnome.org
 
 NAME="geary"
-VERSION=0.4.0
+VERSION=0.4.3
 RELEASE=1
 CATEGORY="Mail"
 SUMMARY="New email reader for the GNOME desktop"
@@ -12,6 +12,5 @@ message. Geary is still in early development and has limited features today,
 but we're planning to add lightning-fast searching, multiple account support,
 and much more."
 HOMEPAGE="http://yorba.org/geary/"
-SRC_URI="http://yorba.org/download/${NAME}/${VERSION%.*}/${NAME}-${VERSION}.tar.xz"
 
 CYGCMAKE_ARGS="-DGSETTINGS_COMPILE=OFF -DICON_UPDATE=OFF -DDESKTOP_UPDATE=OFF"
